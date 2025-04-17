@@ -1,0 +1,76 @@
+/* Style général du body */
+body {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: center;     
+    background-color: #1d1d1d;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    height: 80vh;           
+  }
+  
+  /* Titre centré en haut */
+  h1 {
+    color: #6f487e;
+    margin-bottom: 20px; 
+    text-align: center;
+    width: 100%;          
+  }
+  
+  /* Conteneur principal pour la grille et les boutons */
+  #container {
+    display: flex;           
+    gap: 40px;               
+    width: 100%;              
+    justify-content: center;  
+  }
+  
+  /* Conteneur des boutons à gauche */
+  .controls {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start;  
+    margin-right: 20px;      
+  }
+  
+  /* Style du canvas (grille) */
+  #gameCanvas {
+    border: 1px solid #333;
+    background-color: #1d1d1d;
+    width: 600px;
+    height: 500px;
+  }
+  
+  /* Style des boutons */
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #6f487e;
+    color: #1D1D1D;
+    margin-right: 100px;
+    border: none;
+  }
+  
+
+  #patternSelect {
+    background-color: #6f487e; 
+    color: #1d1d1d;
+    padding: 10px; 
+    font-size: 16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-left: 5px;
+    margin-bottom: 15px;
+  }
+  
+  #patternSelect option {
+    background-color: #6f487e; 
+    color: #1d1d1d;
+  }
+  

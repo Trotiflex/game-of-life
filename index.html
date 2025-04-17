@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Jeu de la Vie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jeu de la Vie</h1>
+  <div id="container">
+    <div class="controls">
+      <button id="startBtn">Démarrer</button>
+      <button id="stopBtn">Arrêter</button>
+      <button id="clearBtn">Effacer</button>
+      <br>
+      <select id="patternSelect">
+        <option value="glider">Planeur (Glider)</option>
+        <option value="gliderGun">Canon à planeur (Gosper Glider Gun)</option>
+        <option value="blinker">Clignotant (Blinker)</option>
+        <option value="block">Bloc</option>
+      </select>
+      <button id="addPatternBtn">Ajouter motif</button>
+      <br>
+      <button id="randomBtn">Générer aléatoirement</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

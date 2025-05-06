@@ -9,7 +9,7 @@ Un jeu de Pong classique développé avec HTML, CSS et JavaScript. Ce projet pro
   - Joueur 2 (Raquette Droite) : `Flèche Haut` (haut), `Flèche Bas` (bas)
 - **Système de Score** : Compte les points pour chaque joueur lorsque la balle passe la raquette adverse.
 - **Animations Fluides** : Utilise `requestAnimationFrame` pour un mouvement fluide de la balle et des raquettes.
-- **Fin de Partie** : Affiche le vainqueur lorsqu'un joueur atteint un score prédéfini (par défaut : 5).
+
 
 ## Prérequis
 - Un navigateur web moderne (par exemple, Chrome, Firefox, Safari, Edge).
@@ -30,9 +30,9 @@ Un jeu de Pong classique développé avec HTML, CSS et JavaScript. Ce projet pro
 
 ## Utilisation
 1. Ouvrez le jeu dans un navigateur.
-2. Appuyez sur une touche de contrôle (`W`, `S`, `Flèche Haut` ou `Flèche Bas`) pour démarrer le jeu.
+2. Appuyez sur une touche de contrôle (`Z`, `S`, `Flèche Haut` ou `Flèche Bas`) pour démarrer le jeu.
 3. Utilisez le clavier pour déplacer les raquettes :
-   - Raquette gauche : `W` (haut), `S` (bas)
+   - Raquette gauche : `Z` (haut), `S` (bas)
    - Raquette droite : `Flèche Haut` (haut), `Flèche Bas` (bas)
 4. Le jeu continue jusqu'à ce qu'un joueur atteigne 5 points, puis affiche le vainqueur.
 5. Rafraîchissez la page pour redémarrer le jeu.
@@ -82,8 +82,6 @@ Pour modifier le jeu, éditez les éléments suivants dans `script.js` :
 - Inclure des effets sonores pour les rebonds de la balle et les points marqués.
 - Ajouter un menu de démarrage/pause.
 
-## Licence
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## Remerciements
 - Inspiré du jeu Pong classique d'Atari.

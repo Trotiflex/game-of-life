@@ -1,76 +1,50 @@
-/* Style général du body */
 body {
     display: flex;
-    flex-direction: column;  
-    justify-content: flex-start;
-    align-items: center;     
-    background-color: #1d1d1d;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    height: 80vh;           
-  }
-  
-  /* Titre centré en haut */
-  h1 {
-    color: #6f487e;
-    margin-bottom: 20px; 
-    text-align: center;
-    width: 100%;          
-  }
-  
-  /* Conteneur principal pour la grille et les boutons */
-  #container {
-    display: flex;           
-    gap: 40px;               
-    width: 100%;              
-    justify-content: center;  
-  }
-  
-  /* Conteneur des boutons à gauche */
-  .controls {
-    display: flex;
-    flex-direction: column;   
-    align-items: flex-start;  
-    margin-right: 20px;      
-  }
-  
-  /* Style du canvas (grille) */
-  #gameCanvas {
-    border: 1px solid #333;
-    background-color: #1d1d1d;
-    width: 600px;
-    height: 500px;
-  }
-  
-  /* Style des boutons */
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #6f487e;
-    color: #1D1D1D;
-    margin-right: 100px;
-    border: none;
-  }
-  
+    background-color: #2c2c2c;
+    min-height: 100vh; 
+    overflow: hidden; 
+}
 
-  #patternSelect {
-    background-color: #6f487e; 
-    color: #1d1d1d;
-    padding: 10px; 
-    font-size: 16px;
-    border:none;
-    border-radius: 5px;
-    cursor: pointer; 
-    margin-left: 5px;
-    margin-bottom: 15px;
-  }
-  
-  #patternSelect option {
-    background-color: #6f487e; 
-    color: #1d1d1d;
-  }
-  
+#pongCanvas {
+    background-color: #2c2c2c;
+    display: block; 
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    aspect-ratio: 4 / 3; 
+    border: 2px solid #c28abf; 
+    box-sizing: border-box; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem; 
+    }
+
+    #pongCanvas {
+        max-width: 90vw; 
+        max-height: 67.5vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.25rem;
+    }
+
+    #pongCanvas {
+        max-width: 95vw; 
+        max-height: 71.25vw; 
+    }
+}
+
+@media (min-width: 1200px) {
+    #pongCanvas {
+        max-width: 1000px; 
+        max-height: 750px;
+    }
+}
